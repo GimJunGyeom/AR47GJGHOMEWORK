@@ -22,5 +22,7 @@ int main()
     Monster NewMonster = Monster();
 
     NewMonster.myPrint();
+
+    //보통 행동만을 public 만듭니다. 변수는 private으로 만든다.함수만 사용해서 변수에 접근하게 제한을 둬야 디버깅이 쉬워짐.
 }
 
