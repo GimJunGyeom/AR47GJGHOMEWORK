@@ -1,5 +1,9 @@
 ﻿#include <iostream>
 
+
+//ctrl shift f - 모두 바꾸기
+//unnamed 메모리는 값을 변경할수 없고 그 값을 받아서 사용은 할수있다 - 문법적으로 정해놓음
+//ex) Number.operator+(10) = 23; 불가능
 class Number
 {
 public:
@@ -171,9 +175,10 @@ public:
 	}
 
 
-	int operator+=(int _Value)
+	Number operator+=(int _Value)
 	{
-		return Value = Value + _Value;
+		Value += _Value;
+		return *this;
 	}
 
 	int operator-=(int _Value)
@@ -211,11 +216,21 @@ public:
 		return Value = Value ^ _Value;
 	}
 
+	//후위 증감 연산자는 예외규칙으로 인자 넣어주되 그 인자를 무시하는 문법으로 만들어놈 논리적으론 맞지 않지만 문법을 그렇게 만듬
 
-	int operator++()
+	//전위 ++
+	Number& operator++()
 	{
 		Value = Value + 1;
-		return Value - 1;
+		return *this;
+	}
+
+	//후위 ++
+	int operator++(int)
+	{
+		int nResult = Value;
+		Value += 1;
+		return nResult;
 	}
 
 	int operator--()
