@@ -1,6 +1,6 @@
 #include "Bullet.h"
 
-Bullet Bullet::JustOneBullet{ {0,0} ,2 };
+Bullet Bullet::JustOneBullet{ {0,0} ,4 };
 
 Bullet:: Bullet(const int2 _PlayerLocation, const char _PlayerLook)  // 총알은 위치와 가는 방향이 있어요
 	:Bullet_Loc(_PlayerLocation), Bullet_Dir(_PlayerLook)

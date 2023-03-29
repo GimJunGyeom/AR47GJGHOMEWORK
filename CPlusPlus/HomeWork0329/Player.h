@@ -44,7 +44,7 @@ private:
 
 	int2 Pos = int2(0, 0);
 
-	char LookingDir = Lookdown;     //플레이어가 보고있는 방향인 동서남북을 숫자로 저장
+	char LookingDir = Lookright;     //플레이어가 보고있는 방향인 동서남북을 숫자로 저장
 
 	static const int Lookup = 1;    //위
 	static const int Lookdown = 2;  //아래

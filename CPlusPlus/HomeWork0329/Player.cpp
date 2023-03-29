@@ -65,10 +65,10 @@ void Player::Input()
 		break;
 	case 'e':
 	case 'E':
-		if (false == IsFire())
+		if (false == IsFire())             //e버튼을 누르면 총알이 나가요
 		{
 			Fire = true;
-			Bullet::JustOneBullet.SetBullLoc(GetPos(), GetLookingDirection());
+			Bullet::JustOneBullet.SetBullLoc(GetPos(), GetLookingDirection());  //현재 플레이어의 위치와 보고있는 방향을 바탕으로 총알 위치 수정
 
 		}
 		break;

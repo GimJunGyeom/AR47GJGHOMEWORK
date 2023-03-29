@@ -22,7 +22,7 @@ public:
 	bool IsScreenOver(const int2& _Pos) const;
 
 	void SetScreenCharacter(const int2& _Pos, char _Ch);
-	void SetScreenCharacter(bool _Fire);
+	void SetScreenCharacter(bool _Fire);                   //함수 오버로딩 (총알용)
 	
 
 protected:
