@@ -60,7 +60,7 @@ public:
 		}
 	}
 
-	bool IsScreenOver(const int2& _Pos)
+	bool IsScreenOver(const int2& _Pos)                       //정답 : bool IsScreenOver(const int2& _Pos) const
 	{
 		if (0 > _Pos.X)
 		{
@@ -113,7 +113,7 @@ public:
 		Pos = _Value;
 	}
 
-	void Input(ConsoleGameScreen& _Screen)                            //ref
+	void Input( ConsoleGameScreen& _Screen)                            //ref 정답 : const ConsoleGameScreen& _Screen
 	{
 		if (0 == _kbhit())
 		{

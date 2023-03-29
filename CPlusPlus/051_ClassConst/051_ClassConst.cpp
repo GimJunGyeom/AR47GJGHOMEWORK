@@ -11,6 +11,12 @@ public:
         //이 맴버함수는 객체의 어떤것도 바꾸지 않을 거라는 의도를 표현하는 것
     {      
     }
+
+    static void Function2()
+    {
+        //const 못붙임 => const 붙여줄 this 없이 접근하는 함수이기 때문
+
+    }
 };
 
 
