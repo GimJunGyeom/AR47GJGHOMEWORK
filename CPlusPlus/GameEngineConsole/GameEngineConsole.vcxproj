@@ -18,24 +18,11 @@
       <Platform>x64</Platform>
     </ProjectConfiguration>
   </ItemGroup>
-  <ItemGroup>
-    <ClCompile Include="GameEngineArray.cpp">
-      <SubType>
-      </SubType>
-    </ClCompile>
-    <ClCompile Include="main.cpp" />
-  </ItemGroup>
-  <ItemGroup>
-    <ClInclude Include="GameEngineArray.h">
-      <SubType>
-      </SubType>
-    </ClInclude>
-  </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>16.0</VCProjectVersion>
     <Keyword>Win32Proj</Keyword>
-    <ProjectGuid>{fb43c43e-8684-4c31-848c-0d1a29579693}</ProjectGuid>
-    <RootNamespace>GameEngineArray</RootNamespace>
+    <ProjectGuid>{bac86528-1ca4-4ded-a11d-9ec17ff206db}</ProjectGuid>
+    <RootNamespace>GameEngineConsole</RootNamespace>
     <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
@@ -151,6 +138,36 @@
       <GenerateDebugInformation>true</GenerateDebugInformation>
     </Link>
   </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="ConsoleGameMath.cpp">
+      <SubType>
+      </SubType>
+    </ClCompile>
+    <ClCompile Include="ConsoleGameObject.cpp">
+      <SubType>
+      </SubType>
+    </ClCompile>
+    <ClCompile Include="ConsoleGameScreen.cpp">
+      <SubType>
+      </SubType>
+    </ClCompile>
+    <ClCompile Include="GameEngineConsole.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="ConsoleGameMath.h">
+      <SubType>
+      </SubType>
+    </ClInclude>
+    <ClInclude Include="ConsoleGameObject.h">
+      <SubType>
+      </SubType>
+    </ClInclude>
+    <ClInclude Include="ConsoleGameScreen.h">
+      <SubType>
+      </SubType>
+    </ClInclude>
+    <ClInclude Include="GameEngineArray.h" />
+  </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
   </ImportGroup>

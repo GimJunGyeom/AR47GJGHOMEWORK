@@ -12,6 +12,8 @@ public:
 	GameEngineArray& operator=(GameEngineArray&& _Other) noexcept = delete;
 	GameEngineArray& operator=(const GameEngineArray& _Other)
 	{
+		
+
 		if (nullptr != ArrPtr)
 		{
 			delete[] ArrPtr;
