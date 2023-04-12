@@ -116,6 +116,11 @@ void ConsoleGameScreen::SetScreenCharacter(const int2& _Pos, char _Ch)
 	ArrScreen[_Pos.Y][_Pos.X] = _Ch;
 }
 
+char ConsoleGameScreen::GetScreenCharacter(const int2& _Pos)
+{
+	return ConsoleGameScreen::ArrScreen[_Pos.Y][_Pos.X];
+}
+
 
 
 ConsoleGameScreen::ConsoleGameScreen()

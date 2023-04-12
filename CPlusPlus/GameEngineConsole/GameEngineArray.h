@@ -9,7 +9,7 @@ class GameEngineArray
 {
 public:
 	// delete Function
-	// GameEngineArray(const GameEngineArray& _Other) = delete;
+	GameEngineArray(const GameEngineArray& _Other) = delete;
 	GameEngineArray(GameEngineArray&& _Other) noexcept = delete;
 	GameEngineArray& operator=(GameEngineArray&& _Other) noexcept = delete;
 
@@ -81,7 +81,8 @@ public:
 
 		for (size_t i = 0; i < CopySize; i++)
 		{
-			NewPtr[i] = ArrPtr[i];
+			
+				NewPtr[i] = ArrPtr[i];
 		}
 
 		if (nullptr != ArrPtr)
