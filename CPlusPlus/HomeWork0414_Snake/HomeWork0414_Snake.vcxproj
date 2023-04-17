@@ -18,23 +18,11 @@
       <Platform>x64</Platform>
     </ProjectConfiguration>
   </ItemGroup>
-  <ItemGroup>
-    <ClInclude Include="Myvector.h">
-      <SubType>
-      </SubType>
-    </ClInclude>
-  </ItemGroup>
-  <ItemGroup>
-    <ClCompile Include="Myvector.cpp">
-      <SubType>
-      </SubType>
-    </ClCompile>
-  </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>16.0</VCProjectVersion>
     <Keyword>Win32Proj</Keyword>
-    <ProjectGuid>{29c76298-427a-46f7-a94b-754db7ee91c5}</ProjectGuid>
-    <RootNamespace>My000CodeTestField</RootNamespace>
+    <ProjectGuid>{5055cf63-e145-44af-8bba-f1e35e8b521a}</ProjectGuid>
+    <RootNamespace>HomeWork0414Snake</RootNamespace>
     <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
@@ -150,6 +138,47 @@
       <GenerateDebugInformation>true</GenerateDebugInformation>
     </Link>
   </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="Body.cpp">
+      <SubType>
+      </SubType>
+    </ClCompile>
+    <ClCompile Include="Head.cpp">
+      <SubType>
+      </SubType>
+    </ClCompile>
+    <ClCompile Include="HomeWork0414_Snake.cpp" />
+    <ClCompile Include="Parts.cpp">
+      <SubType>
+      </SubType>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\GameEngineBase\GameEngineBase.vcxproj">
+      <Project>{09be58ac-3dda-445e-b25a-9a96965b0157}</Project>
+    </ProjectReference>
+    <ProjectReference Include="..\GameEngineConsole\GameEngineConsole.vcxproj">
+      <Project>{bac86528-1ca4-4ded-a11d-9ec17ff206db}</Project>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Body.h">
+      <SubType>
+      </SubType>
+    </ClInclude>
+    <ClInclude Include="Head.h">
+      <SubType>
+      </SubType>
+    </ClInclude>
+    <ClInclude Include="Parts.h">
+      <SubType>
+      </SubType>
+    </ClInclude>
+    <ClInclude Include="SnakeEnum.h">
+      <SubType>
+      </SubType>
+    </ClInclude>
+  </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
   </ImportGroup>

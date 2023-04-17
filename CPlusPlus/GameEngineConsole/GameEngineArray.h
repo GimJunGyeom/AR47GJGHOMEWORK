@@ -59,7 +59,7 @@ public:
 	size_t Count()
 	{
 		return ArrCount;
-	}
+		}
 
 	DataType& operator[](size_t _Index) const
 	{

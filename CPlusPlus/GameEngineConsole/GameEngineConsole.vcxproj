@@ -151,6 +151,10 @@
       <SubType>
       </SubType>
     </ClCompile>
+    <ClCompile Include="ConsoleObjectManager.cpp">
+      <SubType>
+      </SubType>
+    </ClCompile>
     <ClCompile Include="GameEngineConsole.cpp" />
   </ItemGroup>
   <ItemGroup>
@@ -163,6 +167,10 @@
       </SubType>
     </ClInclude>
     <ClInclude Include="ConsoleGameScreen.h">
+      <SubType>
+      </SubType>
+    </ClInclude>
+    <ClInclude Include="ConsoleObjectManager.h">
       <SubType>
       </SubType>
     </ClInclude>

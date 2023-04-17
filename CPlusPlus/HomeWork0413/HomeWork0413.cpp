@@ -160,15 +160,15 @@ int main()
         NewList.push_front(111);
         NewList.push_front(222);
         NewList.push_front(333);
-        NewList.push_front(98765);
+        NewList.push_front(9876);
 
 
-        {
-            GameEngineList::iterator Delete = NewList.begin();
-            ++Delete;
+        //{
+        //    GameEngineList::iterator Delete = NewList.begin();
+        //    ++Delete;
 
-            NewList.erase(Delete);
-        }
+        //    NewList.erase(Delete);
+        //}
 
 
         GameEngineList::iterator Start = NewList.begin();
