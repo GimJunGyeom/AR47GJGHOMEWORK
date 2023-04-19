@@ -66,7 +66,7 @@ void ConsoleObjectManager::ConsoleAllObjectRender()
 
 	}
 
-	//ConsoleGameScreen::GetMainScreen().ScreenPrint();
+	ConsoleGameScreen::GetMainScreen().ScreenPrint();
 
 }
 
