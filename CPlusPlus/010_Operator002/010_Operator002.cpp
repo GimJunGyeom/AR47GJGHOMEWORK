@@ -1,4 +1,4 @@
-﻿
+﻿#include <iostream>
 
 int main() 
 {
@@ -22,10 +22,25 @@ int main()
 	bool bResult = 2;
 	bResult = 0 && 10021312;  // '거짓 and 참'
 
-	//비트 이동 연산자
-	int Mresult = 32 << -3;  // 마이너스 만큼 이동하라고 하면 초기값이 뭐던 결과가 무조건 0 나오더라
+	{
+		int Value0 = 0b00110010; //32 + 16 + 2 = 50
+		int Result0 = Value0 << 3; // 110010'000 = 16 + 128 + 256 = 400
+		int Result1 = Value0 >> 3; // 110 = 2 + 4 = 6
 
+		std::cout << Result0 << std::endl;
+		std::cout << Result1 << std::endl;
+	}
 
+	{
+		int Value0 = 0b00110010; 
 
+		//: shift count negative or too big, undefined behavior - 비트이동 연산이 너무 크거나 음수인 경우는 정의되지 않는 행동이다 == 의미 없는 연산이다.
+		int Result2 = Value0 << -3;
+		int Result3 = Value0 >> -3; 
+		int Result4 = Value0 << 32;
 
+		std::cout << Result2 << std::endl;
+		std::cout << Result3 << std::endl;
+		std::cout << Result4 << std::endl;
+	}
 }

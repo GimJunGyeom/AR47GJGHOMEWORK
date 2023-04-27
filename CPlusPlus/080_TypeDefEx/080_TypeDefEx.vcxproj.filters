@@ -15,6 +15,6 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="how_to_manage_dynamicMemory_delete.cpp" />
+    <ClCompile Include="080_TypeDefEx.cpp" />
   </ItemGroup>
 </Project>

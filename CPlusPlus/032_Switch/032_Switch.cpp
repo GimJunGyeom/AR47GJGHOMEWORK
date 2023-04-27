@@ -33,6 +33,43 @@ int main()
 	default:
 		break;
 	}
+
+	{
+		//스위치문은 case: 밑에 변수를 선언하면 오류가 난다. (최신버전에선 안그럴 수도 있음 버전을 확인해야함)
+		// 따라서 스위치문 이전에 변수를 선언하거나, case: 마다 중괄호로 묶어줘야 오류가 생기지 않는다.
+
+		switch (1)
+		{
+		case 1:
+			//int Value0 = 1;  //오류남
+			break;
+		case Value:
+			break;
+		case 3:
+			break;
+		default:
+			break;
+		}
+
+	}
+
+	{
+		switch (1)
+		{
+		case 1:
+		{
+			int Value0 = 1;  //중괄호로 묶음
+			break;
+		}
+		case Value:
+			break;
+		case 3:
+			break;
+		default:
+			break;
+		}
+
+	}
     
 }
 

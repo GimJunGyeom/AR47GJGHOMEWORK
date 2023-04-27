@@ -7,7 +7,7 @@ public:
     int Hp;
 
     //맴버함수는 첫번째 인자로 무조건 자기자신의 클래스의 포인터가 들어가게 된다. 
-    void Damage(/*Player* const _this,*/ int att)
+    void Damage(/* Player* const _this, */ int att)
     {
         //_this->Hp = att;
         Hp -= att;

@@ -28,5 +28,14 @@ void StatusRenderPtr(const Player& _Player)
 
 int main()
 {
+    int Value0 = 2;
+    int* Ptr0 = &Value0;
+    int* (&Ref0) = Ptr0;  //Ref0은 Ptr0의 주소값을 가진다.
+    int& Ref1 = *Ptr0;    //Ref1은 Value0의 주소값을 가진다. (*Ptr0 == Value0 이므로)
+
+    std::cout << Value0 << std::endl;
+    std::cout << Ptr0 << std::endl;    //Ptr0에 들어있는 Value0의 주소값이 출력됨.
+    std::cout << Ref0 << std::endl;    //Ref0에는 Ptr0의 주소값이 들어있고, 레퍼런스 특징에 따라 자동적으로 Ptr0의 내용(Value의 주소값)이 출력됨.
+    std::cout << Ref1 << std::endl;    //Ref1에는 Ptr0이 가리키는 값, 즉 Value0의 주소값이 있고 레퍼런스 특징에 따라 Value값이 출력됨.
     
 }

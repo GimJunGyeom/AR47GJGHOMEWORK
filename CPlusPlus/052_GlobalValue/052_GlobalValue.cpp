@@ -7,7 +7,8 @@ class Monster
 public:
 	//모든 객체가 공유하는 데이터가 필요할때 데이터 영역에 있는 static 변수 씀 그래서 막상 객체 안(스택영역)에는 없다. 그래서 static 변수는 클래스 이름으로도 접근이 가능함.
 	static int MonsterCount;
-	//즉 static은 같은 클래스의 객체들끼리만 공유하는 전역변수.
+	//즉 static은 같은 클래스의 객체들끼리 공유하는 지역 static 변수.
+
 
 
 

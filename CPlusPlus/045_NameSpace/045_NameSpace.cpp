@@ -47,6 +47,8 @@ public:
 
 //std:: 는 C++스탠다드, 즉 c++만든 사람들이 제공하는 표준코드
 
+
+
 int main()
 {
     Player Test = Player();
