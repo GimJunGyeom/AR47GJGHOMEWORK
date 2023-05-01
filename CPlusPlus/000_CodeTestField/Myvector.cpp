@@ -1,5 +1,7 @@
 #include <vector>
 #include <iostream>
+//#include "TemplateDivisionTest.h"
+#include "TemplateDivisionTest.cpp"
 namespace Test0
 {
 	class namespaceClass
@@ -40,9 +42,20 @@ Test0::namespaceClass OutClass::namespaceClassInOutClass;
 
 int main()
 {
-	OutClass MyOutClass = OutClass();
 
-	MyOutClass.OutClassFunction();
+	//inclass outclass 이름장난 테스트
+	{
+		OutClass MyOutClass = OutClass();
 
-	//OutClass::namespaceClassInOutClass
+		MyOutClass.OutClassFunction();
+
+		//OutClass::namespaceClassInOutClass
+	}
+
+
+	{
+		TemplateDivisionTest MyTemplateClass{};
+
+		MyTemplateClass.Function(3);
+	}
 }

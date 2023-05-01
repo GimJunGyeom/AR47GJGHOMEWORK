@@ -23,9 +23,17 @@
       <SubType>
       </SubType>
     </ClInclude>
+    <ClInclude Include="TemplateDivisionTest.h">
+      <SubType>
+      </SubType>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Myvector.cpp">
+      <SubType>
+      </SubType>
+    </ClCompile>
+    <ClCompile Include="TemplateDivisionTest.cpp">
       <SubType>
       </SubType>
     </ClCompile>

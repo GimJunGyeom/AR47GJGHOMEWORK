@@ -1,1 +1,36 @@
-1. 상단에 프로젝트(P) -> 템플릿 내보내기
+<사용자 정의 템플릿 만들기>
+
+1. 비주얼 스튜디오 상단에 
+   프로젝트(P) -> 템플릿 내보내기(E) -> 항목 템플릿(I) 체크 -> 템플릿으로 만들 원본 프로젝트(W) 선택 해주고 다음(N) 클릭 ->
+   템플릿으로 만들 파일 체크 후 다음 클릭 -> 이 항목과 함께 포함될 참조 선택(S)에서 그냥 다음 클릭->
+   템플릿 이름(T) 정해주고 마침(F) 클릭
+
+   * 선생님 방식은 헤더파일과 cpp 파일을 동시에 만들어 주는 템플릿을 만들고 싶기 때문에 템플릿으로 만들 헤더파일, cpp 파일 각각 똑같이 작업해준다. 이름만 다르게 해주면됨.
+   * 템플릿 이름(T) 다르게 설정해줄때 팁
+     헤더파일 - 여기서 정해준 이름이 앞으로 비주얼 스튜디오에서 지금만들 템플릿 사용할 때 표기될 템플릿이름임. 
+     cpp 파일 - 헤더파일을 템플릿으로 내보낼때 적어준 이름(템플릿이름) 뒤에 대문자로 CPP추가한 이름으로 설정해줌(이름은 그냥 다르게 해도되지만 관습인것 같음)
+   * 예시) 템플릿 이름(T)에 헤더파일은 TemplateName 이라고 적어줬다면 cpp 파일은 TemplateNameCPP 라고 적어줌
+
+2. 1번 작업 마침버튼 누르면 'My Exported Templates' 파일이 열리는데 여기서 내가 내보낸 이름의 압축파일 이름이 있게됨. 
+   여기선 의미 없는 파일이므로 두개 다 삭제.
+
+3. 'My Exported Templates'의 상위폴더 'Visual studio 2022' 파일로 간다. 거기에 'Templates' 파일 선택, 'ItemTemplates' 파일 선택.
+   여기서도 이전에 보았던 똑같은 압축파일 2개가 존재함. 압축 다 풀어줌.
+
+4. !!! 헤더파일은 그대로 놔두고 !!! 압축 풀었던 CPP 파일 안에 있는 .cpp 파일만 복사해서 헤더파일에 붙여 넣기함.
+   그럼 최종적으로 헤더파일 안에는 총 4개파일을 가진 상태임. (.h, .cpp, .ico, .vstemplate)
+   
+   * CPP 파일 + 압축파일 2개는 삭제
+
+5. .vstemplate 파일 더블클릭. 맨아래줄부터 위 3째줄이 템플릿으로 나올 파일의 경로임. 지금 헤더파일 하나만 포함되어 있고 cpp파일은 포함 안되있음.
+
+    예시) 
+    <ProjectItem SubType="" TargetFileName="$fileinputname$.h" ReplaceParameters="true">TemplateTest.h</ProjectItem>
+
+    바로 밑에줄에 .h을 .cpp 로 바꿔서 줄을 추가해줌
+
+    <ProjectItem SubType="" TargetFileName="$fileinputname$.h" ReplaceParameters="true">TemplateTest.h</ProjectItem>
+	<ProjectItem SubType="" TargetFileName="$fileinputname$.cpp" ReplaceParameters="true">TemplateTest.cpp</ProjectItem>
+
+6. 비주얼 스튜디오 껐다키고 프로젝트 우클릭 -> 추가(D) -> 새항목(W) (또는 ctrl + shift + a) 누르면 내가 새로만든 템플릿을 선택할 수 있다. 만들어보고 헤더파일 cpp 파일 두개 동시에 생기는지 확인하면 설정끝
+

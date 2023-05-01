@@ -171,8 +171,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "HomeWork0410", "HomeWork041
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Doc", "Doc", "{25D60723-B3FD-4A19-9494-286F2A021DEA}"
 	ProjectSection(SolutionItems) = preProject
-		Template 파일 만드는 법.txt = Template 파일 만드는 법.txt
 		visual studio 프로젝트 설정하는 법.txt = visual studio 프로젝트 설정하는 법.txt
+		Template 파일 만드는 법.txt = Template 파일 만드는 법.txt
 		헤더파일 환경설정하는법.txt = 헤더파일 환경설정하는법.txt
 	EndProjectSection
 EndProject
