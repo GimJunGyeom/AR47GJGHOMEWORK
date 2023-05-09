@@ -171,8 +171,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "HomeWork0410", "HomeWork041
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Doc", "Doc", "{25D60723-B3FD-4A19-9494-286F2A021DEA}"
 	ProjectSection(SolutionItems) = preProject
-		visual studio 프로젝트 설정하는 법.txt = visual studio 프로젝트 설정하는 법.txt
 		Template 파일 만드는 법.txt = Template 파일 만드는 법.txt
+		visual studio 프로젝트 설정하는 법.txt = visual studio 프로젝트 설정하는 법.txt
 		헤더파일 환경설정하는법.txt = 헤더파일 환경설정하는법.txt
 	EndProjectSection
 EndProject
@@ -221,6 +221,10 @@ EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "083_TemplateEx", "083_TemplateEx\083_TemplateEx.vcxproj", "{6EB28784-4A44-4498-8108-431C086B629E}"
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "084_DefaultParameter", "084_DefaultParameter\084_DefaultParameter.vcxproj", "{38961075-9E33-4474-9E49-32C684962A75}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "085_Float", "085_Float\085_Float.vcxproj", "{B4B6B23D-2CAB-4E1B-A085-322D7EFE5765}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "086_UnionAndDataPadding", "086_UnionAndDataPadding\086_UnionAndDataPadding.vcxproj", "{9AEB16BE-CC31-4A11-9AFF-7703A0CC7B19}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -1038,6 +1042,22 @@ Global
 		{38961075-9E33-4474-9E49-32C684962A75}.Release|x64.Build.0 = Release|x64
 		{38961075-9E33-4474-9E49-32C684962A75}.Release|x86.ActiveCfg = Release|Win32
 		{38961075-9E33-4474-9E49-32C684962A75}.Release|x86.Build.0 = Release|Win32
+		{B4B6B23D-2CAB-4E1B-A085-322D7EFE5765}.Debug|x64.ActiveCfg = Debug|x64
+		{B4B6B23D-2CAB-4E1B-A085-322D7EFE5765}.Debug|x64.Build.0 = Debug|x64
+		{B4B6B23D-2CAB-4E1B-A085-322D7EFE5765}.Debug|x86.ActiveCfg = Debug|Win32
+		{B4B6B23D-2CAB-4E1B-A085-322D7EFE5765}.Debug|x86.Build.0 = Debug|Win32
+		{B4B6B23D-2CAB-4E1B-A085-322D7EFE5765}.Release|x64.ActiveCfg = Release|x64
+		{B4B6B23D-2CAB-4E1B-A085-322D7EFE5765}.Release|x64.Build.0 = Release|x64
+		{B4B6B23D-2CAB-4E1B-A085-322D7EFE5765}.Release|x86.ActiveCfg = Release|Win32
+		{B4B6B23D-2CAB-4E1B-A085-322D7EFE5765}.Release|x86.Build.0 = Release|Win32
+		{9AEB16BE-CC31-4A11-9AFF-7703A0CC7B19}.Debug|x64.ActiveCfg = Debug|x64
+		{9AEB16BE-CC31-4A11-9AFF-7703A0CC7B19}.Debug|x64.Build.0 = Debug|x64
+		{9AEB16BE-CC31-4A11-9AFF-7703A0CC7B19}.Debug|x86.ActiveCfg = Debug|Win32
+		{9AEB16BE-CC31-4A11-9AFF-7703A0CC7B19}.Debug|x86.Build.0 = Debug|Win32
+		{9AEB16BE-CC31-4A11-9AFF-7703A0CC7B19}.Release|x64.ActiveCfg = Release|x64
+		{9AEB16BE-CC31-4A11-9AFF-7703A0CC7B19}.Release|x64.Build.0 = Release|x64
+		{9AEB16BE-CC31-4A11-9AFF-7703A0CC7B19}.Release|x86.ActiveCfg = Release|Win32
+		{9AEB16BE-CC31-4A11-9AFF-7703A0CC7B19}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
